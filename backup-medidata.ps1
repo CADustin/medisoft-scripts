@@ -25,7 +25,7 @@ Write-Output "Creating $($archive)";
 Write-Output " ... Done.";
 
 # Move the newly created archive to the network path
-$finalPath = "\\DocServer\Medisoft\AutoBackup\"
+$finalPath = "PATH-TO-REMOTE BACKUP LOCATION"
 Write-Output "Looking for Remote Backup Location..."
 if (Test-Path -Path "filesystem::$($finalPath)" -PathType Container) {
     Write-Output " ... Found!"
